@@ -1,7 +1,7 @@
 #!/bin/bash -x
 set -o errexit
 set -o nounset
-#git clone https://github.com/tetsuok/kytea libkytea
+git clone https://github.com/tetsuok/kytea libkytea
 cd libkytea
 . ci_config.sh
 bash ./setup_gtest.sh
