@@ -10,7 +10,7 @@ bash ./build_with_gyp.sh Release make
 if [[ "$TARGET_OS" = "Darwin" ]]; then
   cp out_mac/Release/libkytea.a ..
 else
-  cp out_unix/Release/libkytea.a ..
+  cp out_unix/Release/obj.target/gyp/libkytea.a ..
 fi
 cp -fr src/include/kytea .
 
