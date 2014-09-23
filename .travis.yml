@@ -3,6 +3,7 @@ go:
   - tip
 
 before_install:
+  - ./env.sh
   - ./install_kytea.sh
 
 script:

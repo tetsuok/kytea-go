@@ -18,6 +18,4 @@ fi
 cp -fr src/include/kytea .
 
 ln -sf $PWD/data/model.bin ../sample
-
-export CGO_LDFLAGS="-L$PWD"
-export CGO_CFLAGS="-I$PWD"
+cd ..
