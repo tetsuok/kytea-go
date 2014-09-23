@@ -1,6 +1,9 @@
 #!/bin/bash -x
 set -o errexit
 set -o nounset
+
+PWD=`pwd`
+
 git clone https://github.com/tetsuok/kytea libkytea
 cd libkytea
 . ci_config.sh
@@ -14,4 +17,7 @@ else
 fi
 cp -fr src/include/kytea .
 
-ln -sf `pwd`/data/model.bin ../sample
+ln -sf $PWD/data/model.bin ../sample
+
+export CGO_LDFLAGS="-L$PWD"
+export CGO_CFLAGS="-I$PWD"
