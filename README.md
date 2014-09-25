@@ -1,8 +1,5 @@
-kytea-go
+kytea-go [![Build Status](https://travis-ci.org/tetsuok/kytea-go.svg?branch=master)](https://travis-ci.org/tetsuok/kytea-go)
 ========
-
-master: [![Build Status](https://travis-ci.org/tetsuok/kytea-go.svg?branch=master)](https://travis-ci.org/tetsuok/kytea-go)
-develop: [![Build Status](https://travis-ci.org/tetsuok/kytea-go.svg?branch=develop)](https://travis-ci.org/tetsuok/kytea-go)
 
 Go package which provides access to KyTea.
 
@@ -10,4 +7,5 @@ Go package which provides access to KyTea.
 
 - A fork of KyTea: https://github.com/tetsuok/kytea
 
-The reason why we use a fork of KyTea is the original KyTea does not provide C APIs.
+This Go package uses cgo, which means you need to install KyTea's headers and library `libkytea.so`
+under the "correct" path in the sense that the compiler can find the headers and library.
