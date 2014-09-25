@@ -25,7 +25,7 @@ limitations under the License.
 package kytea
 
 /*
-#cgo LDFLAGS: -lkytea -lstdc++
+#cgo LDFLAGS: -lkytea -lstdc++ -lm
 
 #include "kytea/c.h"
 #include <stdlib.h>
