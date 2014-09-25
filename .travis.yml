@@ -3,7 +3,7 @@ go:
   - tip
 
 before_install:
-  - ./env.sh
+  - export CGO_LDFLAGS="-L`pwd`"
   - ./install_kytea.sh
 
 script:
