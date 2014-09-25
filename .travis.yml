@@ -3,8 +3,8 @@ go:
   - tip
 
 before_install:
-  - ./install_kytea.sh
+  - ./test/install_kytea.sh
   - export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
 
 script:
-    - ./smoketest.sh
+    - test/smoketest.sh
