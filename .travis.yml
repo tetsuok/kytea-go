@@ -3,8 +3,8 @@ go:
   - tip
 
 before_install:
-  - export CGO_LDFLAGS="-L`pwd`"
   - ./install_kytea.sh
+  - export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
 
 script:
     - ./smoketest.sh
